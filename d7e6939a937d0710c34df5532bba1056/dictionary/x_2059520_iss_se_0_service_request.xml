@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8f9a17d293bd0710c34df5532bba10ed" extends="task" label="Service Request" max_length="40" name="x_2059520_iss_se_0_service_request" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Requested By" max_length="32" name="requested_by" reference="imp_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Currency" max_length="32" name="currency" reference="fx_currency" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Contact" max_length="32" name="contact" reference="customer_contact" type="reference"/>
+        <element label="Delivery / Service Location" max_length="40" name="delivery_service_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Level 3 : Service Item" max_length="32" name="service_item" reference="ua_entitlement" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Account" max_length="32" name="account" reference="customer_account" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Level 2 : Service Type" max_length="32" name="service_type" reference="ua_entitlement" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Level 1 : Service Category" max_length="32" name="service_category" reference="ua_entitlement" type="reference"/>
+        <element label="Reason" max_length="255" name="reason" type="string"/>
+        <element label="Expected End" max_length="40" name="expected_end" type="glide_date"/>
+        <element label="Delivery / Service Address" max_length="40" name="delivery_service_address" type="string"/>
+    </element>
+</database>
